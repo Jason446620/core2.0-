@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Client\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\coreEntity\coreEntity.csproj" />
+    <ProjectReference Include="..\coreIService\coreIService.csproj" />
+    <ProjectReference Include="..\coreModel\coreModel.csproj" />
+    <ProjectReference Include="..\coreService\coreService.csproj" />
+  </ItemGroup>
+
+</Project>
