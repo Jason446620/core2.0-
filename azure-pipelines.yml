@@ -1,4 +1,11 @@
 # ASP.NET Core (.NET Framework)
+- task: AzureWebApp@1
+  inputs:
+    azureSubscription: 'CSP Azure (e5b0fcfa-e859-43f3-8d84-5e5fe29f4c68)'
+    appType: 'webApp'
+    appName: 'panshubeidevopswebapp'
+    package: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    deploymentMethod: 'auto'
 # Build and test ASP.NET Core projects targeting the full .NET Framework.
 # Add steps that publish symbols, save build artifacts, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
