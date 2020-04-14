@@ -1,7 +1,7 @@
-- task: AzureWebApp@1
+- task: AzureRmWebAppDeployment@4
   inputs:
+    ConnectionType: 'AzureRM'
     azureSubscription: 'CSP Azure (e5b0fcfa-e859-43f3-8d84-5e5fe29f4c68)'
     appType: 'webApp'
-    appName: 'panshubeidevopswebapp'
-    package: '$(System.DefaultWorkingDirectory)/**/*.zip'
-    deploymentMethod: 'auto'
+    WebAppName: 'panshubeidevopswebapp'
+    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
