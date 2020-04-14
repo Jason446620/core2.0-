@@ -1,5 +1,5 @@
 # ASP.NET Core (.NET Framework)
- task: AzureWebApp@1
+- task: AzureWebApp@1
   inputs:
     azureSubscription: 'CSP Azure (e5b0fcfa-e859-43f3-8d84-5e5fe29f4c68)'
     appType: 'webApp'
